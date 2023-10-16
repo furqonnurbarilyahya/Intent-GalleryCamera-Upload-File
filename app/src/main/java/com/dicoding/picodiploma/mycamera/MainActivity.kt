@@ -15,19 +15,8 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
-import androidx.lifecycle.lifecycleScope
 import com.dicoding.picodiploma.mycamera.CameraActivity.Companion.CAMERAX_RESULT
 import com.dicoding.picodiploma.mycamera.data.ResultState
-import com.dicoding.picodiploma.mycamera.data.api.ApiConfig
-import com.dicoding.picodiploma.mycamera.data.api.FileUploadResponse
-import com.google.gson.Gson
-import kotlinx.coroutines.launch
-import okhttp3.MediaType.Companion.toMediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody.Companion.asRequestBody
-import okhttp3.RequestBody.Companion.toRequestBody
-import retrofit2.HttpException
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
